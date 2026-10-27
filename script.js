@@ -117,7 +117,7 @@ function renderQuiz(){
   const el=document.createElement("div");el.className="quizq";
   const p=document.createElement("p");p.textContent=(i+1)+". "+q[language];el.appendChild(p);
   const answers=document.createElement("div");answers.className="answers";
-  q.opts.forEach((op,j)=>{const b=document.createElement("button");b.textContent=String.fromCharCode(65+j)+". "+op[language];if(selected[i]!==undefined){if(j===q.a)b.classList.add("correct");else if(selected[i]===j)b.classList.add("wrong");b.disabled=true;}b.addEventListener("click",()=>{selected[i]=j;renderQuiz();});answers.appendChild(b);});
+  q.opts.forEach((op,j)=>{const b=document.createElement("button");b.textContent=String.fromCharCode(65+j)+". "+op[language === "en" ? 0 : 1];if(selected[i]!==undefined){if(j===q.a)b.classList.add("correct");else if(selected[i]===j)b.classList.add("wrong");b.disabled=true;}b.addEventListener("click",()=>{selected[i]=j;renderQuiz();});answers.appendChild(b);});
   el.appendChild(answers);
   const f=document.createElement("div");f.className="feedback";
   if(selected[i]!==undefined)f.textContent=(selected[i]===q.a?text("Correct. ","Sirrii. "):text("Not quite. ","Sirrii miti. "))+q.why;

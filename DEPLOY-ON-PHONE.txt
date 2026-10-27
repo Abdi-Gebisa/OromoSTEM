@@ -1,0 +1,12 @@
+OROMIA STEM SUITE — MOBILE DEPLOYMENT
+
+1. Back up your repository files first.
+2. Extract this ZIP on your phone.
+3. Upload all files inside OromiaSTEMSuite-Final/ to the ROOT of the existing OromoSTEM GitHub repository.
+4. Replace matching files, keeping exact filenames and extensions.
+5. Commit changes and wait a few minutes for GitHub Pages.
+6. Reload the site. If old content remains, close the tab and reopen the site.
+
+MORE LABS UPGRADE: Enter values in the number boxes or use sliders. Calculations and the graph update automatically. Use “Use in report” to pass the latest calculation to the report.
+
+Scientific note: These are idealized mathematical models. Verify results with a physics teacher; simulations do not replace real experiments.

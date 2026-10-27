@@ -24,3 +24,12 @@ button:disabled{opacity:.55;cursor:not-allowed}
 @media(max-width:850px){.oss-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:560px){.oss-grid{grid-template-columns:1fr}.oss-controls{grid-template-columns:1fr}#ossTools{align-items:stretch}#ossTools button,#ossTools select{flex:1}.oss-card{padding:14px}}
 @media print{.topbar,#ossTools,.oss-actions,button{display:none!important}body{background:white}main{max-width:none;padding:0}.oss-section{break-inside:avoid}.panel,.oss-card{box-shadow:none}}
+
+/* Interactive numeric controls and live graph */
+.oss-variable{min-width:0;padding:14px!important;background:#f8fbf6!important}
+.oss-variable label{display:block;font-weight:700;overflow-wrap:anywhere}
+.oss-variable input[type=number]{display:block;width:100%;min-width:0;box-sizing:border-box;margin:8px 0;padding:12px;font-size:16px;border:1px solid #b8c9bf;border-radius:10px;background:#fff;color:#173f35}
+.oss-variable input[type=range]{display:block;width:100%;min-height:32px;accent-color:#17624f}
+.oss-variable small{color:#53685f}
+#labGraph{border:1px solid #d9e4dc;border-radius:10px;background:#fff}
+@media(max-width:520px){.oss-variable{padding:10px!important}.oss-actions button{min-height:44px}}
