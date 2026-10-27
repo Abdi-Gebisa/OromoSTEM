@@ -1,0 +1,18 @@
+{
+  "name": "Oromia STEM Suite",
+  "short_name": "STEM Suite",
+  "description": "Low-cost physics learning and experiment-preparation tool for secondary-school students.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7f1",
+  "theme_color": "#123d35",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
