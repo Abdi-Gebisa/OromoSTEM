@@ -1,0 +1,35 @@
+/* Additive enhancements: preserves the original green STEM visual system. */
+:focus-visible{outline:3px solid #d97706!important;outline-offset:3px!important}
+button,input,select,textarea{min-height:42px}
+button:disabled{opacity:.55;cursor:not-allowed}
+#ossTools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:12px 0}
+#ossTools button,#ossTools select{border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:#fff;color:var(--green);font-weight:750}
+#ossOffline{padding:7px 10px;border-radius:9px;background:#e6f4df;color:#174c40;font-size:13px;font-weight:750}
+#ossOffline.offline{background:#fff0d9;color:#7c3e0a}
+.oss-section{margin-top:36px;scroll-margin-top:120px}
+.oss-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.oss-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:17px;min-width:0}
+.oss-card h3{margin:0 0 7px}.oss-card p{color:var(--muted);font-size:14px}
+.oss-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.oss-controls label{display:grid;gap:4px;font-size:13px;font-weight:750;color:var(--muted)}
+.oss-controls input,.oss-controls select,.oss-card textarea,.oss-card input[type=text],.oss-card input[type=date]{width:100%;border:1px solid var(--line);border-radius:8px;padding:8px;background:#fff;color:var(--ink)}
+.oss-result{background:#edf4e9;border-radius:10px;padding:11px;margin:10px 0;font-weight:800;overflow-wrap:anywhere}
+.oss-table{width:100%;border-collapse:collapse;font-size:13px}.oss-table th,.oss-table td{border:1px solid var(--line);padding:7px;text-align:left}
+.oss-table-wrap{overflow-x:auto}.oss-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.oss-actions button{border:0;border-radius:9px;padding:9px 12px;background:var(--green);color:white;font-weight:750}
+.oss-actions .secondary{background:#edf4e9;color:var(--green);border:1px solid var(--line)}
+.oss-muted{font-size:12px;color:var(--muted)}.oss-badge{display:inline-block;background:#e8f1e6;color:var(--green);padding:4px 8px;border-radius:99px;font-size:12px;font-weight:800}
+#ossReportPreview{white-space:pre-wrap;background:#f7faf5;padding:12px;border-radius:10px;font-size:13px}
+.oss-high-contrast{--ink:#000;--muted:#252525;--paper:#fff;--card:#fff;--line:#555;--green:#003d2d;--green2:#00543b}
+.oss-large-text{font-size:19px}.oss-large-text button,.oss-large-text input,.oss-large-text label{font-size:1.05em}
+@media(max-width:850px){.oss-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.oss-grid{grid-template-columns:1fr}.oss-controls{grid-template-columns:1fr}#ossTools{align-items:stretch}#ossTools button,#ossTools select{flex:1}.oss-card{padding:14px}}
+@media print{.topbar,#ossTools,.oss-actions,button{display:none!important}body{background:white}main{max-width:none;padding:0}.oss-section{break-inside:avoid}.panel,.oss-card{box-shadow:none}}
+
+/* Interactive numeric controls and live graph */
+.oss-variable{min-width:0;padding:14px!important;background:#f8fbf6!important}
+.oss-variable label{display:block;font-weight:700;overflow-wrap:anywhere}
+.oss-variable input[type=number]{display:block;width:100%;min-width:0;box-sizing:border-box;margin:8px 0;padding:12px;font-size:16px;border:1px solid #b8c9bf;border-radius:10px;background:#fff;color:#173f35}
+.oss-variable input[type=range]{display:block;width:100%;min-height:32px;accent-color:#17624f}
+.oss-variable small{color:#53685f}
+#labGraph{border:1px solid #d9e4dc;border-radius:10px;background:#fff}
+@media(max-width:520px){.oss-variable{padding:10px!important}.oss-actions button{min-height:44px}}
