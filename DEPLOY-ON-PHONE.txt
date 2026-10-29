@@ -1,1 +1,0 @@
-BACK UP YOUR EXISTING REPOSITORY FIRST. Upload all files from OromiaSTEM-Updated into the existing GitHub Pages repository root. Keep exact filenames. Commit changes, open the website online, then refresh. If you have an existing icon.svg, keep it in the repository. Test all labs, quiz feedback, grades, planner, dark mode, and offline behavior before APK packaging.
