@@ -23,13 +23,10 @@ const labs=[
 function init(){
  const nav=document.querySelector('.navlinks');
  if(nav){[['labs','More labs'],['teacher','Teacher']].forEach(([id,label])=>{const b=document.createElement('button');b.dataset.ossview=id;b.textContent=label;b.addEventListener('click',()=>show(id));nav.appendChild(b);});}
- const tools=document.createElement('div');tools.id='ossTools';tools.innerHTML=`<span id="ossOffline" role="status" aria-live="polite">${esc(tr[lang].offline)}</span><label>${esc(tr[lang].languages)} <select id="ossLanguage" aria-label="Interface language"><option value="en">English</option><option value="om">Afaan Oromoo</option><option value="fr">Français</option></select></label><button id="ossContrast" type="button">${esc(tr[lang].contrast)}</button><button id="ossLarge" type="button">${esc(tr[lang].large)}</button><button id="ossLow" type="button" title="Reduce visual effects and data-heavy media; core calculations remain available.">${esc(tr[lang].low)}</button><button id="ossDark" type="button">Dark mode</button>`;
+ const tools=document.createElement('div');tools.id='ossTools';tools.innerHTML=`<span id="ossOffline" role="status" aria-live="polite">${esc(tr[lang].offline)}</span><label>${esc(tr[lang].languages)} <select id="ossLanguage" aria-label="Interface language"><option value="en">English</option><option value="om">Afaan Oromoo</option><option value="fr">Français</option></select></label><button id="ossDark" type="button">Dark mode</button>`;
  document.querySelector('main')?.prepend(tools);$('ossLanguage').value=lang;
  $('ossLanguage').addEventListener('change',e=>{lang=e.target.value;store.set('oss-lang',lang);renderEnhancements();});
- $('ossContrast').addEventListener('click',()=>document.body.classList.toggle('oss-high-contrast'));
- $('ossLarge').addEventListener('click',()=>document.body.classList.toggle('oss-large-text'));
  $('ossDark').addEventListener('click',()=>{const enabled=document.body.classList.toggle('oss-dark');store.set('oss-dark',enabled);$('ossDark').textContent=enabled?'Light mode':'Dark mode';});if(store.get('oss-dark',false)){document.body.classList.add('oss-dark');$('ossDark').textContent='Light mode';}
- $('ossLow').addEventListener('click',()=>{document.body.classList.toggle('oss-low-data');store.set('oss-low-data',document.body.classList.contains('oss-low-data'));});
  if(store.get('oss-low-data',false))document.body.classList.add('oss-low-data');
  renderEnhancements(); updateOnline();window.addEventListener('online',updateOnline);window.addEventListener('offline',updateOnline);
  if('serviceWorker' in navigator && location.protocol.startsWith('http'))navigator.serviceWorker.register('./sw.js').catch(()=>{});
@@ -62,6 +59,7 @@ function openLab(id){
  $('labChoices').querySelectorAll('[data-lab-answer]').forEach(b=>b.addEventListener('click',()=>{$('labQuizFeedback').textContent=Number(b.dataset.labAnswer)===activeLab.quiz[2]?t.correct+'. '+activeLab.background:t.tryAgain+'. '+activeLab.background+' '+activeLab.mistake;}));
  $('labToReport').addEventListener('click',()=>{if(lastCalculation&&lastCalculation.lab.id===id){store.set('oss-report-lab',{name:activeLab.name[lang]||activeLab.name.en,formula:activeLab.formula,calculation:lastCalculation.out,values:lastCalculation.vals});show('report');const dest=$('reportExperiment');if(dest)dest.textContent=activeLab.name[lang]||activeLab.name.en;}else $('labResult').textContent='Calculate the experiment first.';});
  calc(true);
+ show('lab-detail');
 }
 function makeReportAndTeacher(t){
  const report=makeSection('report',t.report,'Complete this report locally. Your personal details are not sent to a server.');

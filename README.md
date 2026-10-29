@@ -1,13 +1,12 @@
-# Oromia STEM Suite — learning update
+# Oromia STEM Suite — mobile-first release
 
-Preserves the existing physics labs and adds a small grade-based learning workspace for Grades 9–12 across Physics, Mathematics, Chemistry and Biology. Includes sample original questions with explanations, local study planner, local progress and milestones, and dark mode. The new lessons are an introductory set, not complete curriculum coverage.
+Created by Abdi Gebisa Nagasa. Preserve the original three physics laboratories and the additional physics models.
 
-## Deployment
-Upload every file from this folder to the same GitHub Pages repository root, keeping filenames unchanged. Test on a phone, then reload once online so the new service worker can cache the release. The previous `icon.svg` was not supplied; if you have it in your repository, keep it.
+## Deploy
+Upload every file in this folder to the root of the existing GitHub Pages repository. Keep the names unchanged. The `icon.svg` file is required for the manifest and offline cache. After committing, visit the website while online, refresh, then test again in airplane mode.
 
-## Notes
-- Translation: the main interface remains bilingual; technical lesson text is currently in English and needs educator-reviewed Afaan Oromoo translation.
-- Low Data Mode hides decoration and animation; the site's original labs remain usable.
-- Progress and study plan are saved locally, not shared with a teacher.
-- Content is an original starter set and should be reviewed against the Ethiopian curriculum before wider distribution.
-- This is a website update, not an APK.
+## Included
+Physics labs, four-subject introductory study lessons, planner, local progress, practice bank, live visualizations, English/Afaan Oromoo interface controls, dark mode and reports. The question bank has 100 entries per subject but includes parameterized numerical patterns and repeated biology concept checks. It is NOT 400 independently authored curriculum-reviewed questions. The new scientific material is in English; translate and review it before describing the site as fully bilingual.
+
+## Test before sharing
+On Android, open a physics card and verify that its detail screen opens and its controls update. Try each subject and graph, both answer outcomes, review mistakes, study planner, dark mode, offline reload, and browser Back. Data is stored locally on the device. This is an educational prototype, not an official exam paper bank.
