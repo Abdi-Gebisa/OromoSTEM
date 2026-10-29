@@ -120,10 +120,11 @@ function renderQuiz(){
   q.opts.forEach((op,j)=>{const b=document.createElement("button");b.textContent=String.fromCharCode(65+j)+". "+op[language === "en" ? 0 : 1];if(selected[i]!==undefined){if(j===q.a)b.classList.add("correct");else if(selected[i]===j)b.classList.add("wrong");b.disabled=true;}b.addEventListener("click",()=>{selected[i]=j;renderQuiz();});answers.appendChild(b);});
   el.appendChild(answers);
   const f=document.createElement("div");f.className="feedback";
-  if(selected[i]!==undefined)f.textContent=(selected[i]===q.a?text("Correct. ","Sirrii. "):text("Not quite. ","Sirrii miti. "))+q.why;
+  if(selected[i]!==undefined){const right=selected[i]===q.a;f.textContent=(right?text("Well done! ","Baay’ee gaarii! "):text("Review this idea. ","Yaada kana irra deebi’i. "))+q.why+(right?text(" Try explaining the reasoning without looking at the formula."," Sababa isaa ofii keetiin ibsuuf yaali."):text(" Compare your choice with the formula and identify which assumption matters."," Filannoo kee foormulaa waliin madaali."));}
   el.appendChild(f);box.appendChild(el);
  });
  const score=questions.filter((q,i)=>selected[i]===q.a).length;
+ try{localStorage.setItem('oss-core-progress',JSON.stringify({answered:Object.keys(selected).length,correct:score,total:questions.length}));window.dispatchEvent(new Event('oss-progress-change'));}catch{}
  $("scorePill").textContent=text("Score: ","Qabxii: ")+score+" / "+questions.length;
 }
 $("resetQuiz").addEventListener("click",()=>{selected={};renderQuiz();});

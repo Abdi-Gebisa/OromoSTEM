@@ -33,3 +33,19 @@ button:disabled{opacity:.55;cursor:not-allowed}
 .oss-variable small{color:#53685f}
 #labGraph{border:1px solid #d9e4dc;border-radius:10px;background:#fff}
 @media(max-width:520px){.oss-variable{padding:10px!important}.oss-actions button{min-height:44px}}
+
+/* Site-wide themes and learning workspace */
+.oss-dark{--paper:#111b19;--card:#1d2c28;--ink:#edf4ef;--muted:#c0d1c9;--line:#40564c;--green:#b5e5c7;--green2:#a1d6b7;--shadow:none;background:var(--paper);color:var(--ink)}
+.oss-dark .topbar{background:#182722}.oss-dark .panel,.oss-dark .oss-card,.oss-dark .labcard,.oss-dark .notecard,.oss-dark .stat,.oss-dark .quizq{background:var(--card);color:var(--ink)}
+.oss-dark .oss-card p,.oss-dark .notecard p,.oss-dark .sectionhead p{color:var(--muted)}
+.oss-dark .navlinks button,.oss-dark .langbtn{color:var(--ink)}.oss-dark .navlinks button.active{background:#345044}
+.oss-dark .oss-variable{background:#263a32!important}.oss-dark .readout{background:#30443a}.oss-dark .readout strong{color:#f2f8f3}
+.oss-dark .answers button{background:#30443a;color:var(--ink)}.oss-dark .formula,.oss-dark .oss-result{background:#2c493a;color:#e3f5e8}
+.oss-dark #ossTools button,.oss-dark #ossTools select,.oss-dark input,.oss-dark textarea,.oss-dark select{background:#263b33;color:#edf4ef;border-color:#53685d}
+.oss-dark .oss-variable input[type=number]{background:#263b33;color:#edf4ef}.oss-dark .secondary{background:#2b4237;color:#edf4ef}
+.oss-dark .note{background:#463b2b;color:#f5e7d0}.oss-dark .pill{background:#355543;color:#f0f8f2}
+.oss-dark .hero{background:#204c3c}.oss-dark .oss-badge{background:#345b47;color:#e2f5e7}
+.oss-dark .oss-section .oss-table th,.oss-dark .oss-section .oss-table td{color:var(--ink)}
+.oss-low-data .heroart,.oss-low-data .orbit{display:none!important}.oss-low-data *{animation:none!important;transition:none!important}
+.learn-filters{display:flex;flex-wrap:wrap;gap:10px;margin:15px 0}.learn-filters label{display:grid;gap:4px;font-weight:700;font-size:13px}.learn-filters select,.learn-filters input,.learn-filters textarea{border:1px solid var(--line);border-radius:9px;padding:10px;background:var(--card);color:var(--ink);max-width:100%}
+.learn-card{padding:17px;border:1px solid var(--line);border-radius:14px;background:var(--card);margin:12px 0}.learn-card p{margin:8px 0}.learn-card button{border:1px solid var(--line);border-radius:8px;padding:9px;margin:5px;background:var(--card);color:var(--ink)}.learn-card button:disabled{opacity:.8}.learn-feedback{padding:10px;border-left:3px solid #4b9b73;background:var(--paper);margin-top:9px;white-space:pre-line}.learn-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}.learn-grid .learn-card{margin:0}.learn-muted{color:var(--muted);font-size:13px}
