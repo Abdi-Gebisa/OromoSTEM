@@ -2,38 +2,48 @@
   "id": "/OromoSTEM/",
   "name": "OROMOSTEM Suite",
   "short_name": "OROMOSTEM",
-  "description": "Interactive STEM laboratories and practice questions for Ethiopian secondary-school students.",
+  "description": "Interactive STEM laboratories, simulations, and practice questions for Ethiopian secondary-school students.",
   "start_url": "/OromoSTEM/",
   "scope": "/OromoSTEM/",
   "display": "standalone",
+  "display_override": [
+    "standalone"
+  ],
   "orientation": "any",
-  "background_color": "#f5f8f5",
-  "theme_color": "#185b45",
   "lang": "en",
+  "dir": "ltr",
+  "background_color": "#ffffff",
+  "theme_color": "#155c49",
+  "categories": [
+    "education",
+    "science",
+    "productivity"
+  ],
   "icons": [
     {
-      "src": "/OromoSTEM/icons/icon-192.png",
+      "src": "./icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/OromoSTEM/icons/icon-maskable-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "/OromoSTEM/icons/icon-512.png",
+      "src": "./icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/OromoSTEM/icons/icon-maskable-512.png",
+      "src": "./icons/maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "./icons/maskable-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
     }
-  ]
+  ],
+  "prefer_related_applications": false
 }
