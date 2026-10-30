@@ -8,3 +8,6 @@ Original examination compilation credited to Mr. Shishay, Ethio National School.
 
 
 Biology photos update: `biology-photos.js` supplies real microscope photographs for Amoeba, Paramecium, and Euglena from Wikimedia Commons. They load from the internet; diagrams in `assets/` remain offline. Photos are credited in the UI with a link to original source/license. Other Biology topics use simplified diagrams, not microscope photos.
+
+
+BIOLOGY DIAGRAM FIX: Eight unique, labeled SVG diagrams are in assets/. Replace the eight files in your existing GitHub assets folder. They are scientifically informed schematics, not microscope photographs. Photo links in biology-photos.js still require internet and may be unavailable.
