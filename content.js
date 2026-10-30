@@ -3,6 +3,7 @@ window.STEM = {
 physics:[
  ['vectors','Vectors and displacement','Resolve vectors into components and calculate a resultant.', ['Magnitude A (units)','Angle A (degrees)','Magnitude B (units)','Angle B (degrees)'],[10,30,8,120],'vectors'],
  ['motion','2D projectile motion','Explore range, flight time and maximum height on level ground.', ['Speed (m/s)','Launch angle (degrees)','Gravity (m/s²)'],[20,45,9.81],'projectile'],
+ ['snell','Snell’s law and refraction','Change refractive indices and incident angle to calculate and visualize refraction.', ['Refractive index n₁','Refractive index n₂','Incident angle (degrees)'],[1,1.5,40],'snell'],
  ['newton','Newton’s second law','See how force and mass change acceleration.', ['Net force (N)','Mass (kg)'],[20,4],'newton'],
  ['energy','Mechanical energy','Compare kinetic and gravitational potential energy.', ['Mass (kg)','Height (m)','Speed (m/s)','Gravity (m/s²)'],[2,10,5,9.81],'energy'],
  ['momentum','Conservation of momentum','Calculate the final speed after a perfectly inelastic collision.', ['Mass 1 (kg)','Velocity 1 (m/s)','Mass 2 (kg)','Velocity 2 (m/s)'],[2,6,3,0],'momentum'],
