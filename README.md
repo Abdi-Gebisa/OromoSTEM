@@ -1,29 +1,16 @@
-# Oromia STEM Suite
+# Oromia STEM Suite — Deployable website
 
-A mobile-first, English-only learning website by Abdi Gebisa Nagasa.
+Upload the CONTENTS of this folder to the root of the OromoSTEM GitHub repository. Keep the assets folder intact.
 
-## Pages
-Home, Physics, Maths, Chemistry, Biology, About.
+Files: index.html, styles.css, content.js, app.js, maths-questions.js, assets/*.svg.
 
-## Edit the site
-- `index.html`: website shell and navigation.
-- `styles.css`: mobile layout and light/dark appearance.
-- `content.js`: topic names, descriptions, experiment input labels and defaults.
-- `app.js`: formulas, interactive diagrams, question logic, and maths question editor.
-- `assets/*.svg`: original simplified educational illustrations.
+Mathematics: 18 independently authored editable practice questions, with selectable options and explanations. These are NOT transcriptions of all the uploaded exam-book questions. The original 43-page exam PDF is NOT included because distribution permission has not been established. The book link only works if you separately upload a copy you have permission to publish under maths-exam-book.pdf.
 
-## Experiments
-Open Physics or Chemistry, select a topic, and type any finite number in an input. Calculations update instantly. Some values (such as zero mass, zero resistance, or invalid logarithm inputs) are mathematically invalid and show an error instead. The diagrams are teaching illustrations and are not all scaled to the inputs.
+Physics: existing interactive models and questions; this package does not claim full transcription of the vectors PPTX.
 
-## Questions
-Physics: 12 topics × 50 generated practice items. Chemistry: 5 topics × 50 generated practice items. These use five reusable question patterns with varied numerical inputs, **not 850 individually authored or independently curriculum-reviewed questions**. Questions are designed to be extended and improved in `app.js`.
+To edit the published Mathematics bank, change maths-questions.js and commit it. On the Maths page, choose Reload from maths file if a previous browser-edited bank takes precedence.
 
-Mathematics: The user-supplied EUEE PDF contains formula-heavy questions that require visual verification. The original PDF is **not included or republished**. Add approved questions manually in Maths or import JSON; use Export to back up your questions. Browser edits are local to that device and do not publish to all visitors. To publish shared questions, store a reviewed JSON file in the repository and add loading code.
+The site uses local browser storage for questions edited on the page. Those edits are not published to all visitors until you update maths-questions.js.
 
-Biology: 8 topics with original diagrams and concise notes. Enzyme activity includes an illustrative interactive temperature model. These are simplified teaching drawings, not microscope photographs.
-
-## Publish using GitHub Pages
-Upload `index.html`, `styles.css`, `content.js`, `app.js`, `README.md` and the entire `assets` directory to the repository root. Ensure `assets` stays a folder. GitHub Pages serves the site without a build step. Back up your old repository before replacing files.
-
-## Testing
-JavaScript syntax is checked with Node.js. Live browser testing is still needed before distributing widely.
+## Source acknowledgement
+The supplied mathematics examination compilation, *Mathematics National Exam (EUEE) Questions from 2004–2011 E.C.*, credits **Mr. Shishay** as compiler (Ethio National School). This website acknowledges the source but does not reproduce the full copyrighted question book. Existing interactive questions are independently written examples.
