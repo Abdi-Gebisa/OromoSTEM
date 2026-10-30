@@ -1,16 +1,10 @@
-# Oromia STEM Suite — Deployable website
+Oromia STEM Suite — Mathematics display fix
 
-Upload the CONTENTS of this folder to the root of the OromoSTEM GitHub repository. Keep the assets folder intact.
+Upload index.html, styles.css, content.js, maths-questions.js and app.js to the ROOT of your GitHub Pages repository. Upload assets/ with its images. All five file names must be lowercase and match exactly.
 
-Files: index.html, styles.css, content.js, app.js, maths-questions.js, assets/*.svg.
+The Maths page contains 18 original interactive practice questions (not the full examination book). The Maths section now displays a question count and ignores empty or invalid saved browser data. If older questions are still shown, select “Reload from maths file” and confirm. Refresh your GitHub Pages website after deployment.
 
-Mathematics: 18 independently authored editable practice questions, with selectable options and explanations. These are NOT transcriptions of all the uploaded exam-book questions. The original 43-page exam PDF is NOT included because distribution permission has not been established. The book link only works if you separately upload a copy you have permission to publish under maths-exam-book.pdf.
+Original examination compilation credited to Mr. Shishay, Ethio National School.
 
-Physics: existing interactive models and questions; this package does not claim full transcription of the vectors PPTX.
 
-To edit the published Mathematics bank, change maths-questions.js and commit it. On the Maths page, choose Reload from maths file if a previous browser-edited bank takes precedence.
-
-The site uses local browser storage for questions edited on the page. Those edits are not published to all visitors until you update maths-questions.js.
-
-## Source acknowledgement
-The supplied mathematics examination compilation, *Mathematics National Exam (EUEE) Questions from 2004–2011 E.C.*, credits **Mr. Shishay** as compiler (Ethio National School). This website acknowledges the source but does not reproduce the full copyrighted question book. Existing interactive questions are independently written examples.
+Biology photos update: `biology-photos.js` supplies real microscope photographs for Amoeba, Paramecium, and Euglena from Wikimedia Commons. They load from the internet; diagrams in `assets/` remain offline. Photos are credited in the UI with a link to original source/license. Other Biology topics use simplified diagrams, not microscope photos.
