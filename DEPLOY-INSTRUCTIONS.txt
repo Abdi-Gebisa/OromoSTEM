@@ -1,0 +1,11 @@
+OROMOSTEM SUITE - FREE GITHUB PAGES DEPLOYMENT
+
+1. Extract this ZIP.
+2. Upload ALL extracted files and the icons/ and assets/ folders to the ROOT of your existing GitHub repository: abdi-gebisa/OromoSTEM. Replace same-named files. Do not upload the ZIP itself.
+3. Commit changes. Wait for GitHub Pages deployment.
+4. Open https://abdi-gebisa.github.io/OromoSTEM/ in an incognito tab.
+5. Open https://www.pwabuilder.com/ and enter the website URL. Package for Android.
+
+NOTE: This ZIP is a website/PWA, NOT an APK. PWABuilder or Android build tools create the APK.
+The APK may need Android signing and website verification. Keep signing keys private.
+All student content is managed through GitHub repository files.
