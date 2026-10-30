@@ -2,13 +2,13 @@
   "id": "/OromoSTEM/",
   "name": "OROMOSTEM Suite",
   "short_name": "OROMOSTEM",
-  "description": "Interactive STEM laboratories and practice questions for Ethiopian secondary-school students.",
+  "description": "Interactive STEM laboratories, simulations, and practice questions for Ethiopian secondary-school students.",
   "start_url": "/OromoSTEM/",
   "scope": "/OromoSTEM/",
   "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#12345a",
   "orientation": "any",
-  "background_color": "#f5f8f5",
-  "theme_color": "#185b45",
   "lang": "en",
   "icons": [
     {
@@ -35,9 +35,5 @@
       "type": "image/png",
       "purpose": "maskable"
     }
-  ],
-  "categories": [
-    "education",
-    "science"
   ]
 }
