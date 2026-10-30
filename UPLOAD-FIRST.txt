@@ -1,0 +1,6 @@
+OROMOSTEM Suite - GitHub Pages
+Upload ALL files and folders from this ZIP to the ROOT of your existing OromoSTEM repository. Do not upload the ZIP itself.
+Overwrite index.html, manifest.json, service-worker.js, and other matching files.
+Do not rename icons. Verify /OromoSTEM/icons/icon-192.png and /OromoSTEM/manifest.json after deployment.
+If an older manifest.webmanifest or sw.js exists, it may remain but is not used by this updated index.html.
+The Android APK is NOT inside this ZIP; use PWABuilder after GitHub Pages deployment.
